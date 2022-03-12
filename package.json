@@ -11,6 +11,8 @@
     "full-deploy-local": "hardhat full-deploy --network localhost",
     "full-deploy-mumbai": "hardhat full-deploy --network mumbai",
     "coverage": "npm run compile && hardhat coverage --temp temp-artifacts --testfiles test/emptyrun.coverage.ts && hardhat coverage --temp temp-artifacts --testfiles '!test/emptyrun.coverage.ts'",
+    "docker:up":"docker-compose up" ,
+    "docker:bash":"docker-compose exec contracts-env bash" ,
     "run-env": "npm i && tail -f /dev/null",
     "hardhat": "hardhat",
     "hardhat:kovan": "hardhat --network kovan",
